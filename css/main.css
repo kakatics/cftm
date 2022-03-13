@@ -18,12 +18,16 @@ body {
 }
 
 /* Atomic Selectors */
-.p10 {
+.pt10 {
     padding-top: 10%;
 }
 
-.p5 {
+.pt5 {
     padding-top: 5%;
+}
+
+.pb10 {
+    padding-bottom: 30%
 }
 
 .container {
@@ -43,7 +47,8 @@ body {
 }
 
 .page__logo {
-    display: flex;
+    display: inline-flex;
+    flex-direction: column;
     height: 100%;
     align-items: center;
     justify-content: center;
@@ -80,13 +85,15 @@ body {
     height: 80%;
     border-radius: 5px;
     overflow-x: auto;
+    border: 1px solid var(--main-fg-color);
 }
 
 table {
     width: 100%;
+    min-width: 700px;
     height: 100%;
+    min-height: 450px;
     border-collapse: collapse;
-    border: 1px solid var(--main-fg-color);
     font-size: 0.8em;
     text-align: center;
 }
