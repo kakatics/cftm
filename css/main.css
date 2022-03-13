@@ -16,6 +16,10 @@ body {
     color: var(--main-fg-color);
 }
 
+.big {
+    min-height: 450px;
+}
+
 .container {
     height: 100vh;
     display: flex;
@@ -64,7 +68,7 @@ body {
 }
 
 .page__timetable > .timetable {
-    width: 800px;
+    width: 700px;
     height: 400px;
     border: 1px solid var(--main-fg-color);
     border-radius: 5px;
@@ -73,7 +77,7 @@ body {
 
 table {
     height: 400px;
-    width: 800px;
+    width: 700px;
     border-collapse: collapse;
     font-size: 0.8em;
     text-align: center;
@@ -88,6 +92,10 @@ th {
 
 td {
     border-right: 1px solid var(--main-fg-color);
+}
+
+td:last-child {
+    border: none;
 }
 
 tr:nth-child(2) > td, tr:last-child > td {
