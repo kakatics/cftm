@@ -85,3 +85,11 @@ th {
     height: 40px;
     font-weight: 500;
 }
+
+td {
+    border-right: 1px solid var(--main-fg-color);
+}
+
+tr:nth-child(2) > td, tr:last-child > td {
+    border: none;
+}
